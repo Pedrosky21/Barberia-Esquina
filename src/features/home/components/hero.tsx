@@ -19,11 +19,11 @@ export default function Hero() {
             <div className="relative z-10 flex items-center justify-center md:justify-start h-full px-6 md:px-12 w-full">
                 <div className="w-full md:w-2/5 space-y-8 md:space-y-12 text-center md:text-left flex flex-col items-center md:items-start">
                     <div>
-                        <h2 className="text-5xl md:text-6xl text-primary font-display">VERSE BIEN</h2>
-                        <h2 className="text-5xl md:text-6xl text-primary font-display font-italic">También es parte.</h2>
+                        <h2 className="text-5xl md:text-6xl text-primary font-display animate-blur-appear">VERSE BIEN</h2>
+                        <h2 className="text-5xl md:text-6xl text-primary font-display font-italic animate-blur-appear animation-delay-200">También es parte.</h2>
                     </div>
-                    <p className="text-lg md:text-xl">Cortes modernos, atención personalizada y un lugar donde sentirse cómodo todos los días.</p>
-                    <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center md:justify-start w-full sm:w-auto">
+                    <p className="text-lg md:text-xl animate-blur-appear animation-delay-400">Cortes modernos, atención personalizada y un lugar donde sentirse cómodo todos los días.</p>
+                    <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center md:justify-start w-full sm:w-auto animate-blur-appear animation-delay-600">
                         <a
                             href="https://wa.me/543515183732"
                             target="_blank"
@@ -45,7 +45,7 @@ export default function Hero() {
                         </a>
                     </div>
                 </div>
-                <div className="hidden md:block relative ml-12 lg:ml-40 ring-6 ring-primary h-96 w-80 rounded-4xl rotate-4 hover:rotate-0 transition-all duration-300">
+                <div className="hidden md:block relative ml-12 lg:ml-40 ring-6 ring-primary h-96 w-80 rounded-4xl rotate-4 hover:rotate-0 transition-all duration-300 animate-blur-appear animation-delay-800">
                     <Image
                         src="/images/hero/barber_hero_image.avif"
                         alt="Barbería"
