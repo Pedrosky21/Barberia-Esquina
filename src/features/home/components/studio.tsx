@@ -17,14 +17,14 @@ export default function Studio() {
 
     return (
         <section id="studio" ref={ref} className="min-h-[calc(100dvh-4rem)] w-full bg-white flex flex-col justify-center py-16 px-4 md:px-8 lg:px-16">
-            <h2 className={`text-4xl md:text-5xl lg:text-7xl text-primary font-serif mb-12 uppercase tracking-wide transform transition-all duration-1000 ease-out ${isInView ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"}`}>
+            <h2 className={`text-4xl md:text-5xl lg:text-7xl text-primary font-serif mb-12 uppercase tracking-wide transform transition-all duration-500 ease-out ${isInView ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}>
                 POR QUÉ NOS ELIGEN
             </h2>
             <div className="w-full max-w-screen-2xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
                     {reasons.map((item, index) => {
-                        const animationClass = `transform transition-all duration-700 ease-out ${isInView ? "scale-100 opacity-100 translate-y-0" : "scale-95 opacity-0 translate-y-8"}`;
-                        const delayStyle = { transitionDelay: `${index * 100 + 100}ms` };
+                        const animationClass = `transform transition-all duration-500 ease-out ${isInView ? "scale-100 opacity-100 translate-y-0" : "scale-95 opacity-0 translate-y-4"}`;
+                        const delayStyle = { transitionDelay: `${index * 60}ms` };
 
                         if (item.type === "logo") {
                             return (
@@ -34,6 +34,7 @@ export default function Studio() {
                                             src="/images/logo/logo.png"
                                             alt="Esquina Studio Logo"
                                             fill
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                             className="object-contain drop-shadow-xl"
                                         />
                                     </div>
@@ -69,6 +70,7 @@ export default function Studio() {
                                             src={item.bgImage}
                                             alt={item.title || "Razón"}
                                             fill
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                             className={`object-cover group-hover:scale-110 transition-all duration-1000 ease-in-out ${isInView ? "opacity-100" : "opacity-0"}`}
                                             style={{ transitionDelay: `${index * 150 + 700}ms` }}
                                         />

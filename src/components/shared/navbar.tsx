@@ -19,13 +19,13 @@ export function Navbar() {
 
         {/* Center: Navigation Links */}
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-          <Link href="#servicios" className="transition-colors hover:text-primary/80">
+          <Link href="#servicios" className="relative py-1 transition-colors hover:text-primary after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 after:bg-primary after:transition-transform after:duration-300 hover:after:scale-x-100 after:origin-left">
             Servicios
           </Link>
-          <Link href="#galeria" className="transition-colors hover:text-primary/80">
+          <Link href="#galeria" className="relative py-1 transition-colors hover:text-primary after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 after:bg-primary after:transition-transform after:duration-300 hover:after:scale-x-100 after:origin-left">
             Galería
           </Link>
-          <Link href="#studio" className="transition-colors hover:text-primary/80">
+          <Link href="#studio" className="relative py-1 transition-colors hover:text-primary after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 after:bg-primary after:transition-transform after:duration-300 hover:after:scale-x-100 after:origin-left">
             Studio
           </Link>
         </nav>

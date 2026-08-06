@@ -8,7 +8,7 @@ export function Footer() {
                 <div className="flex flex-col items-center md:items-start space-y-4">
                     <Link href="/" className="flex items-center gap-3">
                         <div className="relative w-12 h-12 bg-white rounded-xl flex items-center justify-center">
-                            <Image src="/images/logo/logo.png" alt="Esquina Studio Logo" fill className="object-cover" />
+                            <Image src="/images/logo/logo.png" alt="Esquina Studio Logo" fill sizes="48px" className="object-cover" />
                         </div>
                         <span className="text-2xl font-bold tracking-tight">Esquina Studio</span>
                     </Link>
@@ -30,7 +30,7 @@ export function Footer() {
                     <h4 className="font-serif text-xl uppercase tracking-widest">Contacto</h4>
                     <div className="flex flex-col space-y-2 text-center md:text-right opacity-80 text-sm">
                         <p>Av. Siempre Viva 742</p>
-                        <p>Tel: +54 351 5183732</p>
+                        <p>Tel: 3515520115</p>
                         <p>@esquinastudio</p>
                     </div>
                 </div>

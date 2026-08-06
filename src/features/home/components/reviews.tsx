@@ -20,15 +20,15 @@ export default function Reviews() {
     return (
         <section ref={ref} className="w-full bg-secondary/30 py-24 px-4 md:px-8 lg:px-16 overflow-hidden">
             <div className="max-w-screen-xl mx-auto">
-                <h2 className={`text-3xl md:text-5xl text-primary font-serif mb-16 text-center uppercase transform transition-all duration-1000 ease-out ${isInView ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"}`}>
+                <h2 className={`text-3xl md:text-5xl text-primary font-serif mb-16 text-center uppercase transform transition-all duration-500 ease-out ${isInView ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}>
                     Lo que dicen nuestros clientes
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
                     {reviews.map((review, i) => (
                         <div 
                             key={i} 
-                            className={`flex flex-col items-center text-center space-y-6 p-8 transform transition-all duration-700 ease-out ${isInView ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"}`}
-                            style={{ transitionDelay: `${i * 200 + 200}ms` }}
+                            className={`flex flex-col items-center text-center space-y-6 p-8 transform transition-all duration-500 ease-out ${isInView ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
+                            style={{ transitionDelay: `${i * 100}ms` }}
                         >
                             <div className="flex gap-1 text-primary">
                                 {[...Array(5)].map((_, j) => <StarIcon key={j} className="w-5 h-5" />)}
